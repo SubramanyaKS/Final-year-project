@@ -1,0 +1,26 @@
+.navbar {
+    background-color: lightslategray;
+    font-size:1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding:8px5px8px5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+.navbar-brand {
+    font-size:1.2em;
+    font-weight:600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left:30px;
+}
+
+.body-content {
+    padding:5px;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+}
