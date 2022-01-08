@@ -1,9 +1,13 @@
+.body-content {
+  background-color: rgb(248, 213, 139);
+
+}
 .navbar {
-    background-color: lightslategray;
+    background-color: rgb(17, 124, 231);
     font-size:1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
-    padding:8px5px8px5px;
+    padding:8px 5px 8px 5px;
 }
 
 .navbar a {
@@ -25,20 +29,18 @@
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 .main{
-    background-image: url("./images/back.jpg");
-    background-size: 1800px 900px;
+    background-color: aqua;
+    /*background-size: 1800px 900px;
     background-repeat: no-repeat;
     background-position: top;
-    background-attachment: fixed;
-
+    background-attachment: fixed;*/
 }
 /**/
-* {
-    box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
+* 
+{box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
-img {vertical-align: middle;
-}
+img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
