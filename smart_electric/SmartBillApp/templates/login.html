@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block title %}
+
+{% endblock %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+ <div class="bg-img">
+			<div class="content">
+			   <header>Login Form</header>
+			   <form action="main.html#main" name="register" method ="POST">
+				  <div class="field">
+					 <span class="fa fa-user"></span>
+					 <input type="digits" id='number'maxlength="12" onblur="phonenumchk()"  required placeholder="Phone Number">
+				  </div>
+				  <div class="field space">
+					 <span class="fa fa-lock"></span>
+					 <input type="password" id="txtpwd" maxlength="10" onblur="pwdchk()" class="pass-key" required placeholder="Password">
+					 <span class="show">SHOW</span>
+				  </div>
+				  <div class="pass">
+					 <a href="forgot.html">Forgot Password?</a>
+				  </div>
+				  <div class="field">
+					 <input onclick ="window.location.href='main.html';"type="submit" value="LOGIN">
+				  </div>
+			   </form>
+			   <div class="signup">
+				  Don't have account?
+				  <a href="farmer_signup.html">Signup Now</a>
+			   </div>
+			</div>
+		 </div>
+{% endblock %}
