@@ -66,15 +66,15 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
 }
-.btn{
-	background-color: #4169E1;
+.btn-primary{
+	background-color: #0f46eb;
 	outline:none;
 	border:none;
 
 }
-.btn:hover{
+.btn-primary:hover{
 	background-color:transparent;
-	color:black;
+	color:rgb(233, 29, 29);
 	border:1px solid black;
 	transition:0.5s;
 }
