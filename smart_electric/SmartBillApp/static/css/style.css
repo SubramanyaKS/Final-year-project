@@ -46,6 +46,12 @@
     padding:5px;
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
 }
+.main1{
+  background:url(./static/images/electric.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+	text-align: center;
+}
 .main{
     background-color: aqua;
     /*background-size: 1800px 900px;
