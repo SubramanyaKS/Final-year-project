@@ -18,6 +18,7 @@ from SmartBillApp.views import main
 from SmartBillApp.views import login
 from SmartBillApp.views import home
 from django.contrib import admin
+from SmartBillApp.views import register_request
 
 from django.urls import path
 
@@ -28,4 +29,5 @@ urlpatterns = [
     path('login/',login),
     path('main/',main),
     path('contact/',contact),
+    path("register/", register_request, name="register")
 ]
