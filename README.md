@@ -3,7 +3,7 @@
 This project is our final year project which is still in development phase.
 
 ### Title
-The Smart Electric meter using IOT and Web Application.
+The IOT and Web Based Electric Energy Monitoring System.
 
 ### Team:
 
