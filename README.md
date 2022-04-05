@@ -11,3 +11,9 @@ The IOT and Web Based Electric Energy Monitoring System.
 * Subramanya K S
 * Puneeth K S
 * Shivam Kumar
+
+### Guide
+Mr. Pradeep H K.
+Associate Professor
+Dept. ISE
+JNNCe
