@@ -16,4 +16,4 @@ The IOT and Web Based Electric Energy Monitoring System.
 Mr. Pradeep H K.
 Associate Professor
 Dept. ISE
-JNNCe
+JNNCE
