@@ -76,6 +76,10 @@ def index():
 def login():
     return render_template("login.html")
 
+@app.route('/contact')
+def contact():
+    return render_template("contact.html")
+
 
 
 
@@ -125,7 +129,7 @@ def main():
         "f_time":f_time,
     }
     x=json.dumps(x)
-    response = requests.post(url="http://127.0.0.1:5000/",data=x)
+    response = requests.post(url="https://smart-energy-monitoring.herokuapp.com",data=x)
  
     return jsonify(response.text)
 
