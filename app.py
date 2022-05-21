@@ -54,8 +54,10 @@ app.config['MONGODB_SETTINGS'] = {
 db = MongoEngine()
 db.init_app(app)
 
-api_key='ILS1ZHA84G658442'
-ch_id='1737989'
+import config
+
+api_key=config.api_key
+ch_id=config.ch_id
 
 
 
