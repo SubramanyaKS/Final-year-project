@@ -3,3 +3,9 @@
 .env.local
 .env.staging
 env
+
+
+
+
+config.py
+__pycache__
