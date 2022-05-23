@@ -1,14 +1,20 @@
 .card {
     border-radius: 20px;
-    background: #eeeeee;
+    background: linear-gradient(145deg,#72d9f8, #0490c7 );
     /*box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
     */
     border: none;
-    padding: 20rem;
     
 }
+.contact{
+    padding: 20rem;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
 body{
-    background-color: #93ddf3;
+    background: linear-gradient(145deg,#a9e8fc, #38c2f8 );
+    
+
 }
 .card img {
     border-radius: 50%;
