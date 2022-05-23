@@ -3,9 +3,13 @@
     background: #eeeeee;
     /*box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
     */
-    border: none
+    border: none;
+    padding: 20rem;
+    
 }
-
+body{
+    background-color: #93ddf3;
+}
 .card img {
     border-radius: 50%;
     background: linear-gradient(145deg, #d6d6d6, #ffffff);
