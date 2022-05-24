@@ -1,7 +1,37 @@
-body{
-    background-image:url('./light.jpg') ;
+html,
+body {
+    margin: 0;
     height: 100%;
-      
+}
+body{
+
+    background: linear-gradient(145deg,#72d9f8, #0490c7 );
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.footer{
+    padding: 50px;
+}
+.container-fluid{
+    padding: 30px;
+}
+.about{
+    padding: 20px;
+}
+.btn{
+    border: none;
+  background-color: rgb(104, 245, 233);
+  font-size: 15px;
+  font-weight: bold;
+  width:20%;
+  height: 40px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px rgb(34, 21, 89);
+  cursor: pointer;
 }
