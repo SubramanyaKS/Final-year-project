@@ -1,0 +1,46 @@
+body,html{
+    background-image: linear-gradient(to right,rgb(206, 241, 203),rgb(148, 252, 138));
+}
+
+.title{
+    box-shadow: 0px 0px 30px rgb(94, 91, 91);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+  .main{
+    padding-top: 6%;
+    width: 40%; 
+    display: table;
+  }
+  .sub_main{
+    display: table-row; 
+    height: 200px;
+  }
+  .right_page{
+    display: table-cell;
+    border-radius:15px ;
+    background-image: linear-gradient(rgb(178, 247, 169), rgb(24, 237, 78));
+    box-shadow: 0px 5px 15px rgb(133, 169, 144);
+  }
+  
+  .table{
+    padding-top: 2%;
+  }
+  .table input{
+    padding-top:15%;
+    padding-bottom: 3%;
+  }
+  .table #td_right{
+    padding-left: 30px;
+  }
+  
+  .table input,#input{
+      font-size: 15px;
+      border: none;
+      border-bottom: 2px solid rgb(58, 56, 56);
+      outline: none;
+      
+     /*background: rgb(220, 220, 237);*/
+     background: transparent;
+  }
