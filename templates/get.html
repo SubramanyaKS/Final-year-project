@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Data</title>
+    </head>
+    <body style="background-color: black;">
+        {% include'nav.html' %}
+        <br>
+        <br>
+        <table  calss="allot_list" border="border" align="center">
+            <tr style="background-color: yellow;color:black;"><th style="padding: 10px;">User ID</th><th>Blinks Count</th><th>Price in Rs.</th><th></th><th>Date</th><th>Time</th></tr>
+            {% for i in data %}
+                <tr>
+                    <td>{{ i['user_id'] }}</td>
+                    <td>{{ i['blink_count'] }}</td>
+                    <td>{{ i['price'] }}</td>
+                    <td></td>
+                    <td>{{ i['date'] }}</td>
+                    <td>{{ i['time'] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
