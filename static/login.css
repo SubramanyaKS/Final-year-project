@@ -1,0 +1,69 @@
+body{
+ /* background-image: url('./l2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(8px);
+  */
+  background-image: linear-gradient(rgb(94, 110, 252),rgb(101, 248, 236));
+  background-size: cover;
+  
+}
+
+.main{
+  padding-top: 2%;
+  width: 50%; 
+  display: table;
+}
+.sub_main{
+  display: table-row; 
+  height: 370px;
+}
+.left_page{
+  width: 50%; 
+  display: table-cell; 
+  border-radius:15px 0px 0px 15px;
+  background-image: url('./light_bulb.jpg');
+  background-size: 600px 450px; 
+  box-shadow: 0px 8px 20px rgb(62, 50, 144);
+}
+
+.right_page{
+  display: table-cell;
+  /*background-color: rgb(244, 244, 248);*/
+  border-radius:0px 15px 15px 0px;
+  background-image: linear-gradient(rgb(168, 156, 249), rgb(36, 12, 192));
+  /*background-image: linear-gradient(to right,rgb(121, 236, 240),rgb(186, 249, 223));*/
+  box-shadow: 0px 8px 20px rgb(54, 28, 224);
+}
+
+.table{
+  padding-top: 10%;
+}
+.table input{
+  padding-top:15%;
+  padding-bottom: 3%;
+}
+
+.table input{
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(19, 17, 17);
+    outline: none;
+    width:130%;
+   /*background: rgb(220, 220, 237);*/
+   background: transparent;
+}
+.right_page #submit{
+  border: none;
+  background-color: rgb(104, 245, 165);
+  font-size: 15px;
+  font-weight: bold;
+  width:50%;
+  height: 40px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px rgb(34, 21, 89);
+  cursor: pointer;
+}
+input::placeholder{
+  color: black;
+}
