@@ -11,15 +11,28 @@
     padding-top: 0%;
     padding-bottom: 0%;
 }
-body{
-    background: linear-gradient(145deg,#a9e8fc, #38c2f8 );
+html{
+    background:#c2effd;
     
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+    background:#7bdaf7;
+    height:100%;
+    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 }
 .card img {
     border-radius: 50%;
-    background: linear-gradient(145deg, #d6d6d6, #ffffff);
-    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
+    background: linear-gradient(145deg,#72d9f8, #0490c7 );
+    box-shadow: 20px 20px 60px #72d9f8, -20px -20px 60px #ffffff
 }
 
 .neo-button {
