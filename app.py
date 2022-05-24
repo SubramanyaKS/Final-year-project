@@ -78,7 +78,9 @@ def index():
 def contact():
     return render_template("contact.html")
 
-
+@app.route('/forgot')
+def forgot():
+    return render_template("forgot.html")
 
 @app.route('/about')
 def about():
