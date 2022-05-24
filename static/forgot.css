@@ -1,0 +1,14 @@
+body{
+    background:#c2effd;
+}
+.panel{
+    border-radius: 20px;
+    background: linear-gradient(145deg,#72d9f8, #0490c7 );
+    /*
+        *box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+    */
+    border: none;
+}
+.form-gap {
+    padding-top: 70px;
+}
