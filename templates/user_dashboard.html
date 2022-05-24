@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='user_dashboard.css') }}"/>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="{{ url_for('index') }}">Home</a>
+        </div>
+    
+    <center><h1 style="color: black;">User Dashboard</h1></center>
+    <form><table><td>Select data to fetch data</td><td><input type="date" name="date"></td></table></form>
+    <center>
+    <div class="main" >
+        <div class="sub_main" >
+            <div class="right_page"> 
+                <div class="head"><h3>One Unit Price</h3></div>
+                <div class="data">
+                    <table>
+                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);">{{ one_unit_price }}</td>
+                        <tr><td align="center" style="padding-top:10px;font-size:20px;">Rupees</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="right_page1"> 
+                <div class="head1"><h3>Units Consumed</h3></div>
+                <div class="data"><table><td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);">{{ total_units }}</td></table></div>
+                <div></div>
+            </div>
+            <div class="right_page2"> 
+                <div class="head2"><h3>Consumed Unit price</h3></div>
+                <div class="data">
+                    <table>
+                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);">{{ price }}</td>
+                        <tr><td align="center" style="padding-top:10px;font-size:20px;">Rupees</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 2-->
+    <div class="main" >
+        <div class="sub_main" >
+            <div class="right_page"> 
+                <div class="head"><h3>Fixed charges</h3></div>
+                <div class="data">
+                    <table>
+                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);">{{ fixed_charge }}</td>
+                        <tr><td align="center" style="padding-top:10px;font-size:20px;">Rupees</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="right_page1"> 
+                <div class="head1"><h3>Total Amount</h3></div>
+                <div class="data">
+                    <table align="center">
+                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);">{{ total_amount_to_be_paid }}</td>
+                        <tr><td align="center" style="padding-top:10px;font-size:20px;">Rupees</td></tr>
+                    </table>
+                </div>
+                <div></div>
+            </div>
+            <div class="right_page2"> 
+                <div class="head2"><h3>Notifications</h3></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    </center>
+
+    </body>
+</html>
