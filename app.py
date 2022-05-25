@@ -86,6 +86,10 @@ def forgot():
 def about():
     return render_template("about.html")
 
+@app.route('/change')
+def change():
+    return render_template("changePassword.html")
+
 
 
 
