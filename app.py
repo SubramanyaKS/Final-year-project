@@ -249,7 +249,9 @@ def main():
     ts_id=i['id']
 
     m_id=register_user.objects(thingspeak_id=str(ts_id))
+    print("M_id",m_id)
     m_id=[str(i.meter_id) for i in m_id ]
+    print(m_id)
     m_id=m_id[0]
 
     #d=data['feeds']
