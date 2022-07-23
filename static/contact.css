@@ -1,18 +1,20 @@
 .card {
     border-radius: 20px;
     background: linear-gradient(145deg,#72d9f8, #0490c7 );
-    /*box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
-    */
-    border: none;
+    box-shadow: 20px 20px 60px #343131;
+    
+    border: 1px solid rgb(139, 138, 138);
     
 }
+.container-fluid{
+    padding: 0px;
+}
 .contact{
-    padding: 20rem;
+    padding: 5rem;
     padding-top: 0%;
     padding-bottom: 0%;
 }
 html{
-    background:#c2effd;
     
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20,7 +22,7 @@ html{
   background-size: cover;
 }
 body{
-    background:#7bdaf7;
+    background: linear-gradient(145deg,#c5e7f1, #fdae4e );
     height:100%;
     
   -webkit-background-size: cover;
