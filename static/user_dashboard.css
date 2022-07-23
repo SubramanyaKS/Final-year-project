@@ -1,99 +1,203 @@
 body{
-    background-image: linear-gradient(rgb(194, 196, 218),rgb(233, 244, 243));
-    background-size: cover;
-    
+  background-image: linear-gradient(rgb(229, 230, 239),rgb(227, 250, 248));
+  background-size: cover;
+  
 }
-
-
+.main_1{
+  margin-top:100px;
+}
 /* navbar */
 /* Add a black background color to the top navigation */
 .topnav {  
- overflow: hidden;
- background-image: linear-gradient(to right,rgb(201, 202, 214),rgb(205, 201, 236));
- background-size: cover;
- border-radius: 10px;
- box-shadow: 10px 0px 40px rgb(169, 170, 177);
- padding: 5px;
+
+background-image: linear-gradient(to right,rgb(227, 229, 242),rgb(231, 230, 241));
+background-size: cover;
+position: fixed;
+top:0;
+width:100%;
+border-radius: 10px;
+box-shadow: 10px 0px 40px rgb(169, 170, 177);
+padding: 5px;
+
 } 
 .topnav a {
- float: right;
- color: #010101;
- text-align: center;
- padding: 15px 30px;
- 
- text-decoration: none;
- font-size: 20px;
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+float: right;
+color: #010101;
+text-align: center;
+padding: 15px 30px;
+
+text-decoration: none;
+font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
 
- box-shadow: 0px 0px 5px rgb(61, 62, 63);
- border-radius: 30px;
- color: black;
+box-shadow: 0px 0px 5px rgb(61, 62, 63);
+border-radius: 30px;
+color: black;
 }
 
 
 /* navbar */
-  
-  .main{
-    padding-top: 1%;
-    width: 80%; 
-    display:table;
-    border-spacing: 35px;
-  }
-  .sub_main{
-    display: table-row; 
-    height: 180px;
-   
-  }
-  
-  .right_page{
-    display: table-cell;
-    border-radius:15px 25px ;
-    background-image: linear-gradient(rgb(210, 206, 239), rgb(215, 214, 227));
-    box-shadow: 0px 5px 15px rgb(9, 8, 9);
-    
-  }
-  
-  .right_page1{
-    display: table-cell;
-    border-radius:15px 25px ;
-    background-image: linear-gradient(rgb(210, 206, 239), rgb(215, 214, 227));
-    box-shadow: 0px 5px 15px rgb(9, 8, 9);
-    
-  }
-  .right_page2{
-    display: table-cell;
-    border-radius:15px 25px ;
-    background-image: linear-gradient(rgb(210, 206, 239), rgb(215, 214, 227));
-    box-shadow: 0px 5px 15px rgb(9, 8, 9);
-    
-  }
-  .head{
-    background-color: aquamarine;
-    padding-top:3px;
-    font-size: 18px;
-    box-shadow: 0px 5px 15px aquamarine;
-    border-radius:15px 25px 0px 0px;
-  }
-  .head1{
-    background-color: aquamarine;
-    padding-top:3px;
-    font-size: 18px;
-    box-shadow: 0px 5px 15px aquamarine;
-    border-radius:15px 25px 0px 0px;
-  }
-  .head2{
-    background-color: aquamarine;
-    padding-top:3px;
-    font-size: 18px;
-    box-shadow: 0px 5px 15px aquamarine;
-    border-radius:15px 25px 0px 0px;
-  }
-  #font_size{
-    font-size: 40px;
-    font-weight:bold;
-  }
 
+.main{
+  width: 90%;
+  display:table;
+  border-spacing: 35px;
+}
+.sub_main{
+  display: table-row; 
+  height: 180px;
+ 
+}
+
+.right_page{
+  display: table-cell;
+  border-radius:15px 25px ;
+  width: 80%; 
+  display:table;
+  background-image: linear-gradient(to right,rgb(249, 163, 83), rgb(251, 82, 73));
+  box-shadow: 0px 5px 15px rgb(9, 8, 9);
+  
+}
+
+.right_page1{
+  display: table-cell;
+  border-radius:15px 25px ;
+  
+  background-image: linear-gradient(to right,rgb(136, 151, 248), rgb(108, 96, 247));
+  box-shadow: 0px 5px 15px rgb(9, 8, 9);
+  
+}
+.right_page2{
+  display: table-cell;
+  border-radius:15px 25px ;
+  background-image: linear-gradient(to right,rgb(150, 245, 156), rgb(27, 249, 27));
+  box-shadow: 0px 5px 15px rgb(9, 8, 9);
+  
+}
+
+.right_page3{
+  display: table-cell;
+  border-radius:15px 25px ;
+  width: 80%; 
+  display:table;
+  background-image: linear-gradient(to right,rgb(249, 163, 83), rgb(251, 82, 73));
+  box-shadow: 0px 5px 15px rgb(9, 8, 9);
+  
+}
+
+.right_page4{
+  display: table-cell;
+  border-radius:15px 25px ;
+  width:28%;
+  background-image: linear-gradient(to right,rgb(136, 151, 248), rgb(108, 96, 247));
+  box-shadow: 0px 5px 15px rgb(9, 8, 9);
+  
+}
+.right_page5{
+  display: table-cell;
+  border-radius:15px 25px ;
+  width: 35%; 
+  
+  background-image: linear-gradient(to right,rgb(150, 245, 156), rgb(27, 249, 27));
+  box-shadow: 0px 5px 15px rgb(9, 8, 9);
+  
+}
+
+.head{
+  background-image: linear-gradient(to right,rgb(249, 163, 83), rgb(251, 82, 73));
+  font-size: 18px;
+  border-bottom:1px solid rgb(86, 78, 78);
+  /*box-shadow: 0px 5px 15px rgb(79, 60, 59);*/
+  border-radius:15px 25px 0px 0px;
+}
+.head1{
+  background-image: linear-gradient(to right,rgb(136, 151, 248), rgb(108, 96, 247));
+  padding-top:3px;
+  font-size: 18px;
+  border-bottom:1px solid rgb(86, 78, 78);
+  
+  border-radius:15px 25px 0px 0px;
+}
+.head2{
+  background-image: linear-gradient(to right,rgb(150, 245, 156), rgb(27, 249, 27));
+  font-size: 18px;
+  border-bottom:1px solid rgb(86, 78, 78);
+  
+  border-radius:15px 25px 0px 0px;
+}
+#font_size{
+  font-size: 40px;
+  font-weight:bold;
+}
+
+.table #to,#meter_id{
+  /*padding-left: 40px;*/
+  font-weight: bold;
+}
+.table #from{
+  
+  font-weight: bold;
+}
+.table{
+  padding-top: 1%;
+}
+
+.table #meter_id{
+  border:none;
+  
+}
+.table input,#input{
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid rgb(58, 56, 56);
+  outline: none;
+  
+ /*background: rgb(220, 220, 237);*/
+ background: transparent;
+}
+
+.table #submit{
+border: none;
+background-color: rgb(6, 6, 6);
+color:white;
+font-size: 15px;
+font-weight: bold;
+width:300%;
+height: 30px;
+border-radius: 6px;
+box-shadow: 0px 0px 10px rgb(9, 9, 10);
+cursor: pointer;
+}
+.table #submit_td{
+  padding-left: 3%;
+}
+.right_page5 marquee{
+font-size: 15px;
+font-weight: bold;
+}
+.contains{
+width:90%;
+display: table;
+margin-right: auto;
+margin-left: auto;
+box-shadow: 2px 5px 20px black;
+border-radius:20px;
+background-image:linear-gradient(to right,rgb(196, 202, 251),rgb(229, 193, 255),rgb(251, 211, 183)); 
+}
+
+.contains-search{
+width:89%;
+height:50px;
+
+padding:10px;
+display: table;
+margin-right: auto;
+margin-left: auto;
+box-shadow: 1px 1px 5px black;
+border-radius:10px 10px 10px 10px;
+background-image:linear-gradient(to right,rgb(196, 202, 251),rgb(229, 193, 255),rgb(251, 211, 183)); ;
+}
