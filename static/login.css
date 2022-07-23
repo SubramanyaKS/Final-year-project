@@ -4,7 +4,7 @@ body{
   background-size: cover;
   backdrop-filter: blur(8px);
   */
-  background-image: linear-gradient(rgb(94, 110, 252),rgb(101, 248, 236));
+  background-image: linear-gradient(rgba(206, 174, 254, 0.964),rgb(136, 201, 242));
   background-size: cover;
   
 }
@@ -33,7 +33,8 @@ body{
   border-radius:0px 15px 15px 0px;
   background-image: linear-gradient(rgb(168, 156, 249), rgb(36, 12, 192));
   /*background-image: linear-gradient(to right,rgb(121, 236, 240),rgb(186, 249, 223));*/
-  box-shadow: 0px 8px 20px rgb(54, 28, 224);
+  box-shadow: 0px 8px 30px rgb(54, 28, 224);
+  border:1px solid rgb(133, 133, 223);
 }
 
 .table{
