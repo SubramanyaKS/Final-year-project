@@ -1,0 +1,128 @@
+body{
+    background: linear-gradient(105deg,#fbc096, #85ebfb );
+}
+
+.nav{
+    background: linear-gradient(105deg,#fbc096, #85ebfb );
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 10px 0px 40px rgb(89, 74, 60);
+    height:10px;
+    padding:2%;
+}
+.nav button{
+    border:none;
+    padding-left:1%;
+    width:15%;
+    background:transparent;
+    font-size: 20px;
+    text-decoration: none;
+    float: right;
+    font-weight: bold;
+}
+.nav button:hover{
+    font-size:25px;
+    border-radius:5px;
+    color: rgb(6, 6, 6);
+}
+.nav a{
+    padding-left: 2%; 
+}
+.nav h2{
+    color: blanchedalmond;
+}
+.staff_allot{
+    padding-top: 40px;
+}
+.staff_allot td {
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+.staff_allot input{
+    width: 130%;
+    height:40px;
+    font-size:20px;
+}
+.submit{
+    border:none;
+    padding:1%;
+    width:20%;
+    background-color: rgb(77, 243, 215);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submit{
+    padding-top: 20px;
+}
+.submit1{
+    border:none;
+    padding:2%;
+    width:150%;
+    background-color: rgb(77, 243, 215);
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.submit_staff{
+    width:30%;
+    font-size: 25px;
+    font-weight: bold;
+    padding:10px ;
+    cursor: pointer;
+    background-color: rgb(77, 243, 215);
+    border:none;
+    border-radius: 50px;
+}
+.exam_center{
+    padding: 30px;
+    padding-left: 10%;
+
+}
+.exam_center tr{
+    padding: 20px;
+}
+.exam_center td{
+    color:white;
+    font-size: 30px;
+    padding: 10px;
+}
+.exam_center input{
+    height:40px;
+    font-size: 20px;
+    width:80%;
+}
+.nav_list{
+    padding-top: 5%;
+}
+.nav_list button{
+    padding:20px;
+    width:100%;
+    border-radius: 5px;
+    cursor: pointer;
+    border:none;
+}
+.nav_list td{
+    padding:10px;
+}
+.nav_list a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+.allot_list th,td{
+    padding: 10px; 
+}
+textarea{
+    border:none;
+    background-color: antiquewhite;
+    font-size: 20px;
+}
