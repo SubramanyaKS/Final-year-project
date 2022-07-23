@@ -2,6 +2,33 @@ body,html{
     background-image: linear-gradient(to right,rgb(206, 241, 203),rgb(148, 252, 138));
 }
 
+.topnav {  
+  overflow: hidden;
+  background-image: linear-gradient(to right,rgb(207, 250, 165),rgb(143, 246, 148));
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 10px 0px 40px rgb(138, 170, 141);
+  padding: 5px;
+} 
+.topnav a {
+  float: right;
+  color: #010101;
+  text-align: center;
+  padding: 15px 30px;
+  
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+ 
+  box-shadow: 0px 0px 5px rgb(61, 62, 63);
+  border-radius: 30px;
+  color: black;
+}
+
 .title{
     box-shadow: 0px 0px 30px rgb(94, 91, 91);
     padding: 2px;
