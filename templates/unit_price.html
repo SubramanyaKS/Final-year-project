@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='unit_price.css') }}"/>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </div>
+    
+    <center><h1 style="color: black;">Update One Unit Price</h1></center>
+    <center>
+    <div class="main" >
+        <div class="sub_main" >
+            <div class="right_page"> 
+                <form action="https://smart-energy-monitoring.herokuapp.com/unit_price" method="POST">
+                  
+                    <table class="table">
+                        <tr><td id="td">Rural Price<sup style="color:red;">*</sup></td><td></td><td></td><td><input type="number" name="rural"  required></td></tr>
+                        
+                        <tr><td id="td">Urban Price<sup style="color:red;">*</sup></td><td></td><td></td><td><input type="number" name="urban"  required></td></tr>
+                        <tr><td id="td">Fixed Price(rural)<sup style="color:red;">*</sup></td><td></td><td></td><td><input type="number" name="fix_r"  required></td></tr> 
+                        <tr><td id="td">Fixed Price(urban)<sup style="color:red;">*</sup></td><td></td><td></td><td><input type="number" name="fix_u"  required></td></tr>   
+                        
+                        
+                        <tr><td style="font-size:10px;color:red;">*Requied Field</td></tr>
+                        
+                    </table>
+                    
+                    <input id="submit" type="submit" name="submit" value="Update">
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    </center>
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='success.css') }}"/>
+    </head>
+    <body>
+    
+    <center>
+        <div class="topnav">
+            <a class="active" href="{{ url_for('index') }}">Home</a>
+            <h2  style="float:left;">IoT and web Based electrical Energy monitoring System</h2>
+        </div>
+    </center>
+    <center>
+    <div class="main" >
+        <div class="sub_main" >
+            <div class="right_page"> 
+                <h3> You have Consumed {{ kwh }} kWH of energy and Your Bill Amount is {{ bill }}</h3><br>               
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    </center>
+
+    </body>
+</html>

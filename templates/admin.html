@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Admin</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+    </head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <a href="{{url_for('admin')}}"><button>Home</button></a>
+            <a style="float:left;padding-bottom: 5px;font-size:25px;font-weight:bold;">IoT and Web Based Electrical Energy Monitoring System</a>
+        </nav>
+    </div>
+    <h1 style="color:black;" align="center">Welcome Admin</h1>
+   
+
+    <div class="nav_list">
+        <table align="center">
+            <tr>
+                <td><button id="btn" style="background-color: cadetblue;"><a href="{{url_for('notifications')}}">Send Notifications</a></button></td>
+                <td><button id="btn" style="background-color: cadetblue;"><a href="{{url_for('unit_price')}}">Update Price Details</a></button></td>               
+            </tr>
+        </table>
+    </div>
+    <footer class="footer" style="position: absolute;width:99%;bottom: 0;height: 40px;">
+        <p style="text-align: center;">&copy; 2021-22 IoT and Web Based Electrical Energy Monitoring System</p>
+    </footer>
+</body>
+</html>

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="{{ url_for('static',filename='login.css') }}"/>
     </head>
     <body>
-        {% include'nav.html' %}
+    {% include'nav.html' %}
     
     <center><h1 style="color: black;">Login/ Sign In</h1></center>
     <center>
@@ -17,13 +17,14 @@
                 
             </div>
             <div class="right_page"> 
-                <form action="/login" method="POST">
+                <form action="https://smart-energy-monitoring.herokuapp.com/login" method="POST">
+                   
                     <table class="table">
                         <tr><td><input type="email" name="email" placeholder="Enter Email"></td></tr>
-                         <tr><td><input type="text" name="meter_id" placeholder="Energy meter ID"></td></tr>
+                        <tr><td><input type="text" name="meter_id" placeholder="Energy meter ID"></td></tr>
                         <tr><td><input type="password" name="password" placeholder="Enter Password"></td></tr>
                         <tr></tr><tr></tr><tr></tr>
-                        <tr><td><a  href="{{ url_for('forgot') }}">Forgot password?</a></td><td><a href="{{ url_for('register') }}">Sign Up</a></td></tr>
+                        <tr><td><a style="color:rgb(209, 166, 186)" href="{{ url_for('forgot') }}">Forgot password?</a></td><td><a style="color:rgb(209, 166, 186)" href="{{ url_for('register') }}">Sign Up</a></td></tr>
                     </table>
                     <br><br>
                     <input id="submit" type="submit" name="submit" value="Login">
@@ -31,8 +32,12 @@
             </div>
         </div>
     </div>
-    <br><br><br>
+    <br><br><br><br><br><br>
     </center>
-
+    <div>
+        <footer class="footer" style="position: absolute;width:99%;bottom: 0;height: 60px;">
+            <p style="text-align: center;">&copy; 2021-22 IoT and Web Based Electrical Energy Monitoring System</p>
+        </footer>
+    </div>
     </body>
 </html>

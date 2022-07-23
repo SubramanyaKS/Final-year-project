@@ -4,13 +4,14 @@
         <title>
             Smart Electrical Energy monitoring System
         </title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}"/>
+       <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}"/>
+       
     </head>
     <body>
         <div class="topnav">
-            <a class="active" href="/">Home</a>
-            <a href="/contact">Contact</a>
-            <a href="/about">About</a>
+            <a class="active" href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('about') }}">About</a>
           </div>
     </body>
 </html>

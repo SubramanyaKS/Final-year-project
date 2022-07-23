@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='thingspeak_admin.css') }}"/>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </div>
+    
+    <center><h1 style="color: black;">Register ThingSpeak Details</h1></center>
+    <center>
+    <div class="main" >
+        <div class="sub_main" >
+            <div class="right_page"> 
+                <form action="https://smart-energy-monitoring.herokuapp.com/register_api" method="POST">
+                  
+                    <table class="table">
+                        <tr><td id="td">Channel ID<sup style="color:red;">*</sup></td><td></td><td></td><td><input type="text" name="ts_id"  required></td></tr>
+                        
+                        <tr><td id="td">API Key<sup style="color:red;">*</sup></td><td></td><td></td><td><input type="text" name="api"  required></td></tr> 
+                        
+                        
+                        <tr><td style="font-size:10px;color:red;">*Requied Field</td></tr>
+                        
+                    </table>
+                    <br>
+                    <input id="submit" type="submit" name="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    </center>
+
+    </body>
+</html>

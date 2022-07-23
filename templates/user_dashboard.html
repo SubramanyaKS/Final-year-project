@@ -9,32 +9,49 @@
     <body>
         <div class="topnav">
             <a class="active" href="{{ url_for('index') }}">Home</a>
+            
+            <h2  style="float:left;">IoT and web Based electrical Energy monitoring System</h2>
         </div>
-    
-    <center><h1 style="color: black;">User Dashboard</h1></center>
-    <form><table><td>Select data to fetch data</td><td><input type="date" name="date"></td></table></form>
+    <div class="main_1">
+    <center><h1 style="color: black;">User Dashboard</h1></center><br><br>
+    <div class="contains-search" >
+    <form action="https://smart-energy-monitoring.herokuapp.com/filter_wrt_date" method="POST">
+        
+        <table class="table" style="padding-left: 2%;">
+            <tr>
+                <td id="meter_id">ID :</td><td><input id="meter_id" type="text" name="meter_id" value="{{ meter_id }}"></td> 
+                <td id="meter_id">Name :</td><td><input id="meter_id" type="text" name="meter_id" value="{{ name }}"></td>
+                <td id="from">From :</td><td><input type="date" name="date1"></td><td></td>
+                <td id="to">To :</td><td><input type="date" name="date2"></td>
+                <td id="submit_td"><input id="submit" type="submit" value="Search"></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    <br><br>
+    <div class="contains">
     <center>
     <div class="main" >
         <div class="sub_main" >
-            <div class="right_page"> 
-                <div class="head"><h3>One Unit Price</h3></div>
+            <div class="right_page" > 
+                <div class="head" ><h3>One Unit Price</h3></div>
                 <div class="data">
                     <table>
-                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);">{{ one_unit_price }}</td>
+                        <tr><td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);text-align: center;">{{ one_unit_price }}</td></tr>
                         <tr><td align="center" style="padding-top:10px;font-size:20px;">Rupees</td></tr>
                     </table>
                 </div>
             </div>
             <div class="right_page1"> 
-                <div class="head1"><h3>Units Consumed</h3></div>
-                <div class="data"><table><td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);">{{ total_units }}</td></table></div>
+                <div class="head1" ><h3>Units Consumed</h3></div>
+                <div class="data"><table><td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);text-align: center;">{{ total_units }}</td></table></div>
                 <div></div>
             </div>
             <div class="right_page2"> 
                 <div class="head2"><h3>Consumed Unit price</h3></div>
                 <div class="data">
                     <table>
-                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);">{{ price }}</td>
+                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);text-align: center;">{{ price }}</td>
                         <tr><td align="center" style="padding-top:10px;font-size:20px;">Rupees</td></tr>
                     </table>
                 </div>
@@ -45,33 +62,43 @@
     <!-- section 2-->
     <div class="main" >
         <div class="sub_main" >
-            <div class="right_page"> 
+            <div class="right_page3"> 
                 <div class="head"><h3>Fixed charges</h3></div>
                 <div class="data">
                     <table>
-                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);">{{ fixed_charge }}</td>
+                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);text-align: center;">{{ fixed_charge }}</td>
                         <tr><td align="center" style="padding-top:10px;font-size:20px;">Rupees</td></tr>
                     </table>
                 </div>
             </div>
-            <div class="right_page1"> 
+            <div class="right_page4"> 
                 <div class="head1"><h3>Total Amount</h3></div>
                 <div class="data">
                     <table align="center">
-                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);">{{ total_amount_to_be_paid }}</td>
+                        <td id="font_size" style="box-shadow: 0px 15px 10px -15px rgb(33, 99, 77);text-align: center;">{{ total_amount_to_be_paid }}</td>
                         <tr><td align="center" style="padding-top:10px;font-size:20px;">Rupees</td></tr>
                     </table>
                 </div>
                 <div></div>
             </div>
-            <div class="right_page2"> 
+            <div class="right_page5"> 
                 <div class="head2"><h3>Notifications</h3></div>
+                <div class="data">
+                    <table align="center">
+                        
+                        <tr><td><marquee id="notifications" width="100%" scrollamount=2 direction="up" > {% for i in data %} Posted at {{ i['time'] }}  | {{ i['date'] }} - {{ i['notification'] }} <br><br> {% endfor %} </marquee></td></tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
 
     <br><br><br>
     </center>
-
+    </div>
+    </div>
+    <footer class="footer" style="position: absolute;width:99%;">
+        <p style="text-align: center;">&copy; 2021-22 IoT and Web Based Electrical Energy Monitoring System</p>
+    </footer>
     </body>
 </html>

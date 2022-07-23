@@ -21,17 +21,19 @@
                             <p>You can reset your password here.</p>
                             <div class="panel-body">
                 
-                                <form id="register-form" class="form" action="/forgot"  method="POST" >
+                                <form id="register-form" class="form" action="https://smart-energy-monitoring.herokuapp.com/forgot_submit_otp"  method="POST" >
                 
                                 <div class="form-group">
                                     <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                    <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
-                                    </div><br>
-                                    <div>
-                                </div>
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                                        <input id="email" name="email" placeholder="email address" class="form-control"  type="email" value="{{ data }}">
+                                        </div><br>
+                                        <div>
+                                        <input id="email" name="otp" placeholder="Enter OTP" class="form-control"  type="number">
+                                        </div><br>
+                                    
                                 <div class="form-group">
-                                    <input type="submit" name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Send OTP" >
+                                    <input type="submit" name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Next" >
                                    
                                 </div>
                                  

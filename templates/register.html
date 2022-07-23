@@ -9,9 +9,8 @@
     <body>
         <div class="topnav">
             <a class="active" href="{{ url_for('index') }}">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="{{ url_for('get') }}">View Data</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('about') }}">About</a>
         </div>
     
     <center><h1 style="color: black;">Register</h1></center>
@@ -19,9 +18,10 @@
     <div class="main" >
         <div class="sub_main" >
             <div class="right_page"> 
-                <form action="http://127.0.0.1:5000/register" method="POST">
+                <form action="https://smart-energy-monitoring.herokuapp.com/register" method="POST">
+                  
                     <table class="table">
-                        <tr><td><input type="text" name="full_name" placeholder="Name*" required></td><td id="td_right"><input type="number" name="ph_no" placeholder="Phone no*" required></td><td id="td_right"><input type="email" name="email" placeholder="Email*" required></td></tr>
+                        <tr><td><input type="text" name="full_name" placeholder="Name*" required></td><td id="td_right"><input type="tel" name="ph_no" placeholder="Phone no*"  max="10" required></td><td id="td_right"><input type="email" name="email" placeholder="Email*" required></td></tr>
                         <tr><td id=""><input type="text" name="city" placeholder="City"></td><td id="td_right"><input type="text" name="state" placeholder="State"></td><td id="td_right"><select  name="area" required><option value="" disabled selected>Select Area</option><option>Rural</option><option>Urban</option></select></td></tr>
                         <tr><td><input type="text" name="ts_id" placeholder="ThingSpeak ID*" required></td><td id="td_right"><input type="text" name="meter_id" placeholder="Energy Meter ID*" required></td><td id="td_right"><input type="text" name="address" placeholder="Address*" required></td></tr> 
                         <tr></tr> <tr></tr>
