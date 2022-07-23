@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='admin_success.css') }}"/>
+    </head>
+    <body>
+    
+    <center>
+        <div class="title">
+            <h2 style="color: black;">IoT and web Based electrical Energy monitoring System</h2>
+        </div>
+    </center>
+    <center>
+    <div class="main" >
+        <div class="sub_main" >
+            <div class="right_page"> 
+                <h3> {{ data }}</h3><br>
+                <a href="{{ url_for('login') }}">Please Login to Continue</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    </center>
+
+    </body>
+</html>
