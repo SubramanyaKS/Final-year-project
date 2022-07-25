@@ -7,7 +7,7 @@ import json
 
 s=BlockingScheduler()
 #@app.route('/main')
-@s.scheduled_job('interval',minutes=1)
+@s.scheduled_job('interval',minutes=60)
 def main_activity():
     keys={}
     data=register_user.objects()
